@@ -50,6 +50,30 @@ Es exactamente ese cambio gradual de ancho, pulso a pulso, lo que — una vez pr
 - **Frecuencia de la senoidal (salida):** la frecuencia real que le llega a la carga/motor.
 - En un inversor real, la portadora suele ser **10 a 100 veces más rápida** que la frecuencia de salida deseada.
 
+## Circuito de prueba (medio puente)
+
+![Medio puente IR2101 + 2x MOSFET con LEDs indicadores, controlado desde Arduino pines 9 (HIN) y 5 (LIN)](assets/circuito-medio-puente.png)
+
+Montaje usado para todas las capturas de osciloscopio de este documento: un medio puente con **IR2101** como gate driver y **2 MOSFETs** (high-side / low-side), cada uno con un LED indicador en su rama para ver visualmente la conmutación alternada. El Arduino controla las entradas **HIN (pin 9)** y **LIN (pin 5)** del IR2101, generando la señal PWM con deadtime que luego se compara contra la tabla de duty interpolada para aproximar el SPWM.
+
+- **Nodo de salida** (entre los dos MOSFETs): punto de medición del osciloscopio, y el punto que en un inversor real iría hacia la carga o una fase del motor.
+- **LEDs indicadores**: confirman visualmente que high-side y low-side conmutan de forma alternada, sin traslape (shoot-through).
+
+## Prototipo soldado
+
+Versión soldada del mismo medio puente sobre placa perforada (protoboard de baquelita), migrada desde el breadboard de pruebas: **IR2101**, 2x **IRF3205** (con disipador), diodo y capacitor de bootstrap, 2 LEDs indicadores de conmutación, y bloque de terminales azul para la entrada de alimentación (en vez del jack barrel).
+
+<p float="left">
+  <img src="assets/prototipo-soldado.jpeg" alt="Placa soldada vista superior con los 2 IRF3205, IR2101, LEDs y terminal de alimentación" width="45%" />
+  <img src="assets/prototipo-soldado-lados.jpeg" alt="Placa soldada vista lateral mostrando el cableado por debajo" width="45%" />
+</p>
+
+## Prueba en banco con osciloscopio
+
+Montaje de validación con la placa soldada, puntas de osciloscopio (caimanes) conectadas al nodo de salida del medio puente y a GND común, usado para las capturas de forma de onda de este documento.
+
+![Banco de pruebas con la placa soldada y puntas de osciloscopio conectadas](assets/prueba-banco-osciloscopio.jpeg)
+
 ## Glosario rápido
 
 | Término | Significado |
