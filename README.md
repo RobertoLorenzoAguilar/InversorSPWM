@@ -59,7 +59,6 @@ Montaje usado para todas las capturas de osciloscopio de este documento: un medi
 - **Nodo de salida** (entre los dos MOSFETs): punto de medición del osciloscopio, y el punto que en un inversor real iría hacia la carga o una fase del motor.
 - **LEDs indicadores**: confirman visualmente que high-side y low-side conmutan de forma alternada, sin traslape (shoot-through).
 
-<<<<<<< HEAD
 ## Prototipo soldado
 
 Versión soldada del mismo medio puente sobre placa perforada (protoboard de baquelita), migrada desde el breadboard de pruebas: **IR2101**, 2x **IRF3205** (con disipador), diodo y capacitor de bootstrap, 2 LEDs indicadores de conmutación, y bloque de terminales azul para la entrada de alimentación (en vez del jack barrel).
