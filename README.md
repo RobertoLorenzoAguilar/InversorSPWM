@@ -50,6 +50,15 @@ Es exactamente ese cambio gradual de ancho, pulso a pulso, lo que — una vez pr
 - **Frecuencia de la senoidal (salida):** la frecuencia real que le llega a la carga/motor.
 - En un inversor real, la portadora suele ser **10 a 100 veces más rápida** que la frecuencia de salida deseada.
 
+## Circuito de prueba (medio puente)
+
+![Medio puente IR2101 + 2x MOSFET con LEDs indicadores, controlado desde Arduino pines 9 (HIN) y 5 (LIN)](assets/circuito-medio-puente.png)
+
+Montaje usado para todas las capturas de osciloscopio de este documento: un medio puente con **IR2101** como gate driver y **2 MOSFETs** (high-side / low-side), cada uno con un LED indicador en su rama para ver visualmente la conmutación alternada. El Arduino controla las entradas **HIN (pin 9)** y **LIN (pin 5)** del IR2101, generando la señal PWM con deadtime que luego se compara contra la tabla de duty interpolada para aproximar el SPWM.
+
+- **Nodo de salida** (entre los dos MOSFETs): punto de medición del osciloscopio, y el punto que en un inversor real iría hacia la carga o una fase del motor.
+- **LEDs indicadores**: confirman visualmente que high-side y low-side conmutan de forma alternada, sin traslape (shoot-through).
+
 ## Glosario rápido
 
 | Término | Significado |
