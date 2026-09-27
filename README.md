@@ -75,6 +75,10 @@ Montaje de validación con la placa soldada, puntas de osciloscopio (caimanes) c
 
 ![Banco de pruebas con la placa soldada y puntas de osciloscopio conectadas](assets/prueba-banco-osciloscopio.jpeg)
 
+
+![Banco de pruebas con la placa soldada y puntas de osciloscopio conectadas](assets/AnimationPWM.gif)
+
+
 =======
 >>>>>>> 4b1588eaea79b9cffa5fbf08383ca22a1b6bf51e
 ## Glosario rápido
