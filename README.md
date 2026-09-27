@@ -96,6 +96,8 @@ Montaje de validación con la placa soldada, puntas de osciloscopio (caimanes) c
 
 ![Banco de pruebas con la placa soldada y puntas de osciloscopio conectadas](assets/prueba-banco-osciloscopio.jpeg)
 
+![Actualidad Funcionalidad](assets/AnimationPWM.gif)
+
 ## Glosario rápido
 
 | Término | Significado |
