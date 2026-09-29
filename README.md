@@ -98,6 +98,10 @@ Montaje de validación con la placa soldada, puntas de osciloscopio (caimanes) c
 
 ![Actualidad Funcionalidad](assets/AnimationPWM.gif)
 
+
+## Diseño PCB
+<img width="678" height="522" alt="image" src="https://github.com/user-attachments/assets/13581d18-4d6e-4598-a041-e1add33d8b64" />
+
 ## Glosario rápido
 
 | Término | Significado |
