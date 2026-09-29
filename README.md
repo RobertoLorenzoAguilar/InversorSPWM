@@ -100,7 +100,8 @@ Montaje de validación con la placa soldada, puntas de osciloscopio (caimanes) c
 
 
 ## Diseño PCB
-<img width="678" height="522" alt="image" src="https://github.com/user-attachments/assets/13581d18-4d6e-4598-a041-e1add33d8b64" />
+<img width="2160" height="2014" alt="3D_PCB1_2026-09-29" src="https://github.com/user-attachments/assets/e3ac1146-52c9-4a99-b4d1-ab0e60b2425e" />
+
 
 ## Glosario rápido
 
